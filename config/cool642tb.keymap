@@ -102,10 +102,10 @@
 
         ARROW {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                  &none   &kp U  &kp I      &kp O       &kp P
+&none         &none         &bt BT_CLR_ALL  &none         &none         &none   &none   &kp H   &kp J  &kp K      &kp L       &kp ENTER
+&none         &none         &none           &none         &none         &none   &none   &kp N   &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&trans        &trans        &trans          &trans        &trans        &trans  &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
