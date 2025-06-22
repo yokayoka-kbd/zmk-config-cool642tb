@@ -91,10 +91,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                         &kp NUMBER_6      &kp N7          &kp N8          &kp N9           &kp N0
-&kp LEFT_CONTROL  &kp TAB       &kp DELETE    &kp ESCAPE    &kp COLON      &none   &none   &kp MINUS         &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT        &kp ENTER
-&kp LEFT_SHIFT    &none         &none         &none         &kp SEMICOLON  &none   &none   &kp SINGLE_QUOTE  &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
-&trans            &trans        &trans        &trans        &trans         &trans  &trans  &trans                                                             &trans
+&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                         &kp NUMBER_6      &kp N7          &kp N8        &kp N9     &kp N0
+&kp LEFT_CONTROL  &kp TAB       &kp DELETE    &kp ESCAPE    &kp COLON      &none   &none   &kp MINUS         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSLASH
+&kp LEFT_SHIFT    &none         &none         &none         &kp SEMICOLON  &none   &none   &kp SINGLE_QUOTE  &kp GRAVE       &trans        &trans     &mt SLASH RIGHT_SHIFT
+&trans            &trans        &trans        &trans        &trans         &trans  &trans  &trans                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
