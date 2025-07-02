@@ -51,6 +51,20 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        new_menu: new_menu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp K_APPLICATION>,
+                <&macro_release>,
+                <&kp LSHIFT>;
+
+            label = "NEW_MENU";
+        };
     };
 
     behaviors {
@@ -82,7 +96,7 @@
             bindings = <
 &kp F1               &kp F2  &kp F3  &kp F4   &kp F5                   &kp HOME    &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp BACKSPACE
 &mt LEFT_CONTROL F6  &kp F7  &kp F8  &kp F9   &kp F10  &none   &none   &kp END     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT       &none   &none   &kp F11  &kp F12  &none   &none   &kp INSERT  &kp LS(K_APP)   &kp LC(SPACE)   &kp CAPSLOCK     &kp RIGHT_SHIFT
+&kp LEFT_SHIFT       &none   &none   &kp F11  &kp F12  &none   &none   &kp INSERT  &new_menu       &kp LC(SPACE)   &kp CAPSLOCK     &kp RIGHT_SHIFT
 &trans               &trans  &trans  &trans   &trans   &trans  &trans  &trans                                                       &trans
             >;
 
