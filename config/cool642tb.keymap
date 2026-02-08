@@ -139,10 +139,10 @@
 
         MOUSE {
             bindings = <
-&none             &none   &none     &none     &none                   &mkp MB5  &none     &none     &none     &kp LS(LG(S))
-&kp LEFT_CONTROL  &none   &mkp MB2  &mkp MB1  &none   &none   &none   &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB3  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none   &none     &none     &none   &none   &none   &none     &none     &none     &none     &kp RIGHT_SHIFT
-&trans            &trans  &trans    &trans    &trans  &trans  &trans  &trans                                  &trans
+&none             &none   &none   &none   &none                   &mkp MB5  &none     &none     &none     &kp LS(LG(S))
+&kp LEFT_CONTROL  &none   &none   &none   &none   &none   &none   &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB3  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none   &none   &none   &none   &none   &none   &none     &none     &none     &none     &kp RIGHT_SHIFT
+&trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
